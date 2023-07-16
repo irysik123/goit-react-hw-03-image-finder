@@ -12,7 +12,6 @@ import {
 import { AiOutlineSearch } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 
-
 const API_KEY = '37132472-47d9b0efe4089b759aaed266f';
 const BASE_URL = 'https://pixabay.com/api/';
 
@@ -74,7 +73,7 @@ export default class SearchBar extends Component {
         <SearchHeader>
           <SearchForm onSubmit={this.handleSubmit}>
             <SearchFormBtn type="submit">
-            <AiOutlineSearch style={{ stroke: "grey" }}/>
+              <AiOutlineSearch style={{ stroke: 'grey' }} />
               {/* <SearchLabel>
                 
               </SearchLabel> */}
@@ -106,4 +105,4 @@ export default class SearchBar extends Component {
 
 SearchBar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-}
+};
