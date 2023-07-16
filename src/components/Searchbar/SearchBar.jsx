@@ -6,7 +6,7 @@ import {
   SearchHeader,
   SearchForm,
   SearchFormBtn,
-  SearchLabel,
+  /* SearchLabel, */
   Input,
 } from './Searchbar.styled';
 import { AiOutlineSearch } from 'react-icons/ai';

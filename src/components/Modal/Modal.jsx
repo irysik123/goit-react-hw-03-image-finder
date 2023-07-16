@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { ModalWindow, ModalContainer } from './Modal.styled';
-import PropTypes from 'prop-types';
+/* import PropTypes from 'prop-types'; */
 
 export default class Modal extends Component {
   componentDidMount() {
