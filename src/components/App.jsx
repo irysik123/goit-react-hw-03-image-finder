@@ -12,7 +12,6 @@ export default class App extends Component {
     this.setState({ searchText });
   };
 
-
   render() {
     return (
       <>

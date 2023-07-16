@@ -38,12 +38,12 @@ export default class Modal extends Component {
 }
 
 Modal.propTypes = {
-  onClick:PropTypes.func.isRequired,
-  onClose:PropTypes.func.isRequired,
-  image:PropTypes.objectOf(
+  onClick: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+  image: PropTypes.objectOf(
     PropTypes.shape({
-      largeImageURL:PropTypes.string.isRequired,
+      largeImageURL: PropTypes.string.isRequired,
       tags: PropTypes.string.isRequired,
     })
-  )
-}
+  ),
+};
