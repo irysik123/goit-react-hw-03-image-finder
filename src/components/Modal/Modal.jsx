@@ -37,7 +37,7 @@ export default class Modal extends Component {
   }
 }
 
-Modal.propTypes = {
+/* Modal.propTypes = {
   onClick: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
   image: PropTypes.objectOf(
@@ -47,3 +47,4 @@ Modal.propTypes = {
     })
   ),
 };
+ */

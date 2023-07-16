@@ -38,7 +38,7 @@ export default class ImageGalleryItem extends Component {
   }
 }
 
-ImageGalleryItem.propTypes = {
+/* ImageGalleryItem.propTypes = {
   image: PropTypes.objectOf(
     PropTypes.exact({
       id: PropTypes.number.isRequired,
@@ -46,4 +46,4 @@ ImageGalleryItem.propTypes = {
       tags: PropTypes.string.isRequired,
     })
   )
-}
+} */
