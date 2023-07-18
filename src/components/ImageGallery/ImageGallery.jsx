@@ -5,11 +5,8 @@ import PropTypes from 'prop-types';
 export const ImageGallery = ({ images }) => {
   return (
     <Gallery>
-      {images.length > 0 ? (
-        images.map(image => <ImageGalleryItem key={image.id} image={image} />)
-      ) : (
-        <div>Sorry, no results found</div>
-      )}
+      {images &&
+        images.map(image => <ImageGalleryItem key={image.id} image={image} />)}
     </Gallery>
   );
 };

@@ -20,7 +20,7 @@ export default class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchText !== this.state.searchText) {
-        this.grabImages();
+      this.grabImages();
     } else if (prevState.page !== this.state.page) {
       this.grabImages(this.state.page, this.state.images);
     }
@@ -39,7 +39,8 @@ export default class App extends Component {
           isLoading: false,
           totalHits: images.totalHits,
         });
-      })
+      }
+      )
       .catch(error => console.log(error));
   };
 
@@ -49,12 +50,11 @@ export default class App extends Component {
     this.setState({ page: newPage });
   };
 
-
   handleSubmit = searchText => {
     if (searchText.length < 3) {
       alert('Please enter minimum 3 symbols to search for Images');
     } else if (searchText === this.state.searchText) {
-      alert(`You're already searching for ${searchText}`)
+      alert(`You're already searching for ${searchText}`);
     } else {
       this.setState({ searchText });
     }
@@ -74,6 +74,7 @@ export default class App extends Component {
             {totalHits !== images.length && (
               <Button onClick={this.handleLoadMore}>Load More</Button>
             )}
+            {totalHits === 0 && (<div>"Sorry, no results found =( Please try one more time"</div>)}
           </>
         )}
       </>
