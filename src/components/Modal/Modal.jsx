@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { ModalWindow, ModalContainer } from './Modal.styled';
-/* import PropTypes from 'prop-types'; */
+import PropTypes from 'prop-types';
 
 export default class Modal extends Component {
   componentDidMount() {
@@ -37,14 +37,11 @@ export default class Modal extends Component {
   }
 }
 
-/* Modal.propTypes = {
-  onClick: PropTypes.func.isRequired,
+Modal.propTypes = {
+  toggleModal: PropTypes.func,
   onClose: PropTypes.func.isRequired,
-  image: PropTypes.objectOf(
-    PropTypes.shape({
+  image: PropTypes.shape({
       largeImageURL: PropTypes.string.isRequired,
       tags: PropTypes.string.isRequired,
     })
-  ),
 };
- */

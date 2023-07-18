@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Modal from 'components/Modal/Modal';
 import { Item, ItemImage } from './ImageGalleryItme';
-/* import PropTypes from 'prop-types'; */
+import PropTypes from 'prop-types';
 
 export default class ImageGalleryItem extends Component {
   state = {
@@ -38,12 +38,10 @@ export default class ImageGalleryItem extends Component {
   }
 }
 
-/* ImageGalleryItem.propTypes = {
-  image: PropTypes.objectOf(
-    PropTypes.exact({
+ImageGalleryItem.propTypes = {
+  image: PropTypes.shape({
       id: PropTypes.number.isRequired,
       webformatURL:PropTypes.string.isRequired,
       tags: PropTypes.string.isRequired,
     })
-  )
-} */
+}
